@@ -44,3 +44,10 @@ def listar_filmes(self) -> None:
 
     for filme in self._filmes:
         print(f"  • {filme.titulo:<20} {filme.duracao}min  [{filme.genero}]")
+
+class Usuario:
+    def __init__(self, nome: str, email: str, plano: str):
+        self.nome = nome
+        self.email = email
+        self.plano = plano
+        self._avaliacoes: list[Avaliacao] = []
