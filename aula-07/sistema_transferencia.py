@@ -17,4 +17,8 @@ class BancoDeDados:
             return True
         return False
 
-
+# CELULA 2 — ServidorNubank
+class ServidorNubank:
+    def __init__(self):
+        self.banco = BancoDeDados()
+        
