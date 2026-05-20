@@ -25,3 +25,9 @@ class Avaliacao:
     def __repr__(self):
         titulo = self.filme.titulo if self.filme else "sem filme"
         return f"Avaliacao(nota={self.nota}, filme='{titulo}')"
+    
+    class Catalogo:
+    def __init__(self, titulo: str, qtd_filmes: int = 0):
+        self.titulo = titulo
+        self.qtd_filmes = qtd_filmes
+        self._filmes: list[Filme] = []
