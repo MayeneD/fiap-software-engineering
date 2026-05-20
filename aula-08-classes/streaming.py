@@ -57,4 +57,11 @@ def avaliar(self, filme: Filme, avaliacao: Avaliacao) -> None:
     self._avaliacoes.append(avaliacao)
 
     print(f"  ⭐ {self.nome} avaliou '{filme.titulo}' com nota {avaliacao.nota}.")
-    
+
+def ver_avaliacoes(self) -> None:
+    print(f"\n👤 Avaliações de {self.nome} ({self.plano})")
+    print("  " + "─" * 40)
+
+    for av in self._avaliacoes:
+        print(f"  • {av.filme.titulo:<20} nota: {av.nota}")
+        print(f"    \"{av.comentario}\"")
