@@ -65,3 +65,13 @@ def ver_avaliacoes(self) -> None:
     for av in self._avaliacoes:
         print(f"  • {av.filme.titulo:<20} nota: {av.nota}")
         print(f"    \"{av.comentario}\"")
+
+class Plataforma:
+    def __init__(self, nome: str, pais: str):
+        self.nome = nome
+        self.pais = pais
+        self._catalogos: list[Catalogo] = []
+
+    def adicionar_catalogo(self, catalogo: Catalogo) -> None:
+        self._catalogos.append(catalogo)
+        
