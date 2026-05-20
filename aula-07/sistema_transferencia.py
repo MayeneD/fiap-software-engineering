@@ -30,7 +30,7 @@ class ServidorNubank:
         saldo_restante = self.banco.verificar_saldo(user_id)
         return {"status": "aprovado", "saldo_restante": saldo_restante}
     else:
-        return {"status": "negado", "motivo": "saldo insuficiente"}
+        return {"status": "reprovado", "motivo": "saldo insuficiente"}
 
 # CELULA 3 — AppNubank
 class AppNubank:
