@@ -51,3 +51,10 @@ class Usuario:
         self.email = email
         self.plano = plano
         self._avaliacoes: list[Avaliacao] = []
+
+def avaliar(self, filme: Filme, avaliacao: Avaliacao) -> None:
+    avaliacao.filme = filme
+    self._avaliacoes.append(avaliacao)
+
+    print(f"  ⭐ {self.nome} avaliou '{filme.titulo}' com nota {avaliacao.nota}.")
+    
