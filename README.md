@@ -1,6 +1,6 @@
 # Engenharia de Software — FIAP 2026
 
-**Aluno:** Mayene D | [github.com/MayeneD](https://github.com/MayeneD/fiap-software-engineering)
+**Aluno:** Mayene Doria RM558858 | [github.com/MayeneD](https://github.com/MayeneD/fiap-software-engineering)
 
 ---
 
