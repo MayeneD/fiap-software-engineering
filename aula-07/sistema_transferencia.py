@@ -45,3 +45,9 @@ class AppNubank:
         print(f"[APP] ✅ Transferência aprovada! Saldo: R$ {resultado['saldo_restante']:.2f}")
     else:
         print(f"[APP] ❌ Transferência recusada: {resultado['motivo']}")
+
+# CELULA 4 — Testes
+app = AppNubank()
+
+print("=== Teste 1: Transferência dentro do saldo ===")
+app.transferir("user_123", 200.0)
