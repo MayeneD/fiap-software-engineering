@@ -15,7 +15,7 @@ class Avaliacao:
     """Pertence ao Usuario (composição) e referencia um Filme (associação)."""
 
     def __init__(self, nota: float, comentario: str):
-        if not (0 < nota < 10):
+        if not (0 <= nota <= 10):
             raise ValueError("Nota deve estar entre 0 e 10.")
 
         self.nota = nota
