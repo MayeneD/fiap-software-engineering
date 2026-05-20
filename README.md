@@ -22,7 +22,7 @@ python aula-03-rf-nf/gymtrack.py
 
 ### Aula 02 — Levantamento de Requisitos *(bônus)*
 
-Código: `aula-02-elicitacao/conversor_temperatura.py`
+Código: [conversor_temperatura.py](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-02-elicitacao/conversor_temperatura.py)
 Output: [conversor_output.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-02-elicitacao/conversor_output.png)
 
 Conversor de temperatura entre Celsius, Fahrenheit e Kelvin com validação de entrada via `try/except` e menu interativo em loop. Os requisitos RF e RNF foram documentados diretamente no código antes da implementação.
@@ -31,7 +31,7 @@ Conversor de temperatura entre Celsius, Fahrenheit e Kelvin com validação de e
 
 ### Aula 03 — Requisitos Funcionais e Não-Funcionais
 
-Código: `aula-03-rf-nf/gymtrack.py`
+Código: [gymtrack.py](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-03-rf-nf/gymtrack.py)
 Output: [gymtrack_output.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-03-rf-nf/gymtrack_output.png)
 
 Validador de treino GymTrack que verifica nome, peso (1–300 kg) e repetições (1–50). O RNF de performance é medido em tempo real com `time`, exibindo o tempo de execução em ms.
@@ -40,7 +40,7 @@ Validador de treino GymTrack que verifica nome, peso (1–300 kg) e repetições
 
 ### Aula 04 — Documento SRS
 
-Código: `aula-04-srs/srs_marketplace.py`
+Código: [srs_marketplace.py](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-04-srs/srs_marketplace.py)
 Output: [marketplace_output.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-04-srs/marketplace_output.png)
 
 SRS do FIAP Marketplace com 4 requisitos funcionais e 3 não-funcionais usando `@dataclass`. A função `validar_requisito()` checa se cada requisito tem descrição adequada, pré-condição definida e critério mensurável.
@@ -50,7 +50,7 @@ SRS do FIAP Marketplace com 4 requisitos funcionais e 3 não-funcionais usando `
 ### Aula 05 — UML e Casos de Uso
 
 Diagrama: [diagramadecasos.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-05-uml/diagramadecasos.png)
-Código: `aula-05-uml/biblioteca_digital.py`
+Código: [biblioteca_digital.py](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-05-uml/biblioteca_digital.py)
 Output: [biblioteca_output.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-05-uml/biblioteca_output.png)
 
 Diagrama de casos de uso e implementação da Biblioteca Digital FIAP cobrindo UC-01 Listar, UC-02 Buscar, UC-03 Emprestar com `<<include>>` verificar disponibilidade e UC-04 Devolver com `<<extend>>` aplicar multa por atraso.
@@ -60,7 +60,7 @@ Diagrama de casos de uso e implementação da Biblioteca Digital FIAP cobrindo U
 ### Aula 06 — Diagramas de Atividades
 
 Diagrama: [diagrama.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-06-diagramas/diagrama.png)
-Código: `aula-06-diagramas/cadastro_usuario.py`
+Código: [cadastro_usuario.py](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-06-diagramas/cadastro_usuario.py)
 Output: [aula06-output.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-06-diagramas/aula06-output.png)
 
 Diagrama com swimlanes e função `cadastro_usuario()` que espelha cada losango de decisão: validação de e-mail via regex, verificação de duplicidade e confirmação de conta. Inclui 4 cenários de teste.
@@ -70,7 +70,7 @@ Diagrama com swimlanes e função `cadastro_usuario()` que espelha cada losango 
 ### Aula 07 — Diagramas de Sequência
 
 Diagrama: [Diagrama_sequencia.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-07-sequencia/Diagrama_sequencia.png)
-Código: `aula-07-sequencia/sistema_transferencia.py`
+Código: [sistema_transferencia.py](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-07-sequencia/sistema_transferencia.py)
 Output: [output_nubank.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-07-sequencia/output_nubank.png)
 
 Diagrama de sequência e simulação de transferência Nubank com três lifelines (`AppNubank → ServidorNubank → BancoDeDados`) e fragmento `[alt]` para aprovação ou recusa por saldo insuficiente.
@@ -80,7 +80,7 @@ Diagrama de sequência e simulação de transferência Nubank com três lifeline
 ### Aula 08 — Diagramas de Classes
 
 Diagrama: [diagrama de classes.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-08-classes/diagrama%20de%20classes.png)
-Código: `aula-08-classes/streaming.py`
+Código: [streaming.py](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-08-classes/streaming.py)
 Output: [output_streaming.png](https://github.com/MayeneD/fiap-software-engineering/blob/main/aula-08-classes/output_streaming.png)
 
 Diagrama de classes e sistema de streaming (Netflix) com cinco classes demonstrando composição (`Plataforma → Catalogo`, `Usuario → Avaliacao`), agregação (`Catalogo → Filme`) e associação (`Avaliacao → Filme`).
