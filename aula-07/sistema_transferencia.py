@@ -17,20 +17,22 @@ class BancoDeDados:
             return True
         return False
 
+
 # CELULA 2 — ServidorNubank
 class ServidorNubank:
     def __init__(self):
         self.banco = BancoDeDados()
 
     def processar_transferencia(self, user_id: str, valor: float) -> dict:
-    saldo = self.banco.verificar_saldo(user_id)
+        saldo = self.banco.verificar_saldo(user_id)
 
-    if saldo >= valor:
-        self.banco.debitar(user_id, valor)
-        saldo_restante = self.banco.verificar_saldo(user_id)
-        return {"status": "aprovado", "saldo_restante": saldo_restante}
-    else:
-        return {"status": "reprovado", "motivo": "saldo insuficiente"}
+        if saldo >= valor:
+            self.banco.debitar(user_id, valor)
+            saldo_restante = self.banco.verificar_saldo(user_id)
+            return {"status": "aprovado", "saldo_restante": saldo_restante}
+        else:
+            return {"status": "reprovado", "motivo": "saldo insuficiente"}
+
 
 # CELULA 3 — AppNubank
 class AppNubank:
@@ -38,13 +40,14 @@ class AppNubank:
         self.servidor = ServidorNubank()
 
     def transferir(self, user_id: str, valor: float):
-    print(f"[APP] Iniciando transferência de R$ {valor:.2f}...")
-    resultado = self.servidor.processar_transferencia(user_id, valor)
+        print(f"[APP] Iniciando transferência de R$ {valor:.2f}...")
+        resultado = self.servidor.processar_transferencia(user_id, valor)
 
-    if resultado["status"] == "aprovado":
-        print(f"[APP] ✅ Transferência aprovada! Saldo: R$ {resultado['saldo_restante']:.2f}")
-    else:
-        print(f"[APP] ❌ Transferência recusada: {resultado['motivo']}")
+        if resultado["status"] == "aprovado":
+            print(f"[APP] ✅ Transferência aprovada! Saldo: R$ {resultado['saldo_restante']:.2f}")
+        else:
+            print(f"[APP] ❌ Transferência recusada: {resultado['motivo']}")
+
 
 # CELULA 4 — Testes
 app = AppNubank()
